@@ -6,7 +6,7 @@ hidden: false
 
 ## Muita esimerkkejä sovelluskerroksen protokollista
 
-WWW-palvelun, tiedostopalvelujen ja virtuaalisen yksityisverkon lisäksi sovelluskerroksella on satoja muitakin palveluja ja niiden omia protokollia.  Yksi yleisimmistä on sähköpostin lähettämisessä käytetty SMTP.
+WWW-palvelun ja tiedostopalvelujen lisäksi sovelluskerroksella on satoja muitakin palveluja ja niiden omia protokollia.  Yksi yleisimmistä on sähköpostin lähettämisessä käytetty SMTP.
 
 ## Sähköposti
 
@@ -14,13 +14,13 @@ Sähköpostipalvelu poikkeaa aiemmista palveluista siinä, että sähköpostin l
 
 Sähköpostijärjestelmän eri vaiheiden protokollat käyttäytyvät eri tavalla. Lähetysvaiheessa käytettävä SMTP on niin sanottu PUSH-tyyppinen protokolla. Siinä sähköpostin lähettäjä 'työntää' tiedon sähköpostipalvelimelle ilman, että palvelin tekee aktiivisesti mitään. Aktiivinen toimija on siis postin lähettäjä. Lukuvaiheessa käytettävät protokollat IMAP ja POP3 ovat ns. PULL-tyyppisiä protokollia. Niissä  sähköpostin lukijan täytyy itse aktiivisesti ottaa yhteyttä palvelimeen ja 'vetää' sähköpostin sisältö palvelimelta itselleen. Tämä protokollien eri osapuolten aktiivisuus on myös seikka, joka palvelun ja protokollien suunnittelijoiden täytyy ottaa huomioon.
 
-Roskapostin lähettäjät hyödyntävät vahvasti tätä sähköpostien lähettämisen PUSH-periaatetta. Ne voivat ottaa yhteyttä sähköpostipalvelimeen ja antaa sille sähköpostiviestin välitettäväksi sähköpostin vastaanottajalle. Alkuperäisessä SMTP:ssä sähköpostipalvelimen piti vastaanottaa kaikki sille annetut viestit. Nykyisin sähköpostipalvelimet suojautuvat mahdollisuuksien mukaan tällaisten asiattomien viestien välittämiseltä esimerkiksi pyrkimällä tunnistamalla viestin lähettäjän ja tarvittaessa kieltäytymällä viestin vastaanottamisesta.
+Roskapostin lähettäjät hyödyntävät vahvasti tätä sähköpostien lähettämisen PUSH-periaatetta. Ne voivat ottaa yhteyttä sähköpostipalvelimeen ja antaa sille sähköpostiviestin välitettäväksi sähköpostin vastaanottajalle. Alkuperäisessä SMTP:ssä sähköpostipalvelimen piti vastaanottaa kaikki sille annetut viestit. Nykyisin sähköpostipalvelimet suojautuvat mahdollisuuksien mukaan tällaisten asiattomien viestien välittämiseltä esimerkiksi pyrkimällä tunnistamaan viestin lähettäjän ja tarvittaessa kieltäytymällä viestin vastaanottamisesta.
 
 ## Pikaviestit
 
 Pikaviestintä on selvästi sähköpostia uudempi tapa viestiä internetin käyttäjien kesken. Ensimmäisiä näistä oli [IRC](https://fi.wikipedia.org/wiki/IRC). Nykyisin paljon käytettyjä ovat esimerkiksi Whatsapp, Telegram, Yammer ja Slack. [Wikipedian pikaviestimiä käsittelevällä sivulla](https://fi.wikipedia.org/wiki/Pikaviestint%C3%A4) on lueteltu paljon muitakin pikaviestintäjärjestelmiä. Usein kukin järjestelmä on omalla tavallaan suljettu eli viestejä voi väittää vain kyseisen sovelluksen käyttäjien kesken.
 
-Monet pikaviestintäjärjestelmät käyttävät sisäisesti viestein välittämiseen XMPP-protokollaa (Extensible Messaging and Presence Protocol), mutta muitakin, usein järjestelmän omia, protokollia on käytössä. XMPP on avoin protokolla, joten sen standardit on julkaistu. Niissä on varauduttu myös siihen, että XMPP:tä käyttävään järjestelmään voi erillisen yhdyskäytävän (gateway) kautta olla käyttäjiä myös muita protokollia käyttävissä järjestelmissä. Yhdyskäytävän tehtävänä on silloin tehdä tarvittavat protokollamuunnokset XMPP:n ja käyttäjän asiakasohjelman käyttämän protokollan välillä.
+Monet pikaviestintäjärjestelmät käyttävät sisäisesti viestien välittämiseen XMPP-protokollaa (Extensible Messaging and Presence Protocol), mutta muitakin, usein järjestelmän omia, protokollia on käytössä. XMPP on avoin protokolla, joten sen standardit on julkaistu. Niissä on varauduttu myös siihen, että XMPP:tä käyttävään järjestelmään voi erillisen yhdyskäytävän (gateway) kautta olla käyttäjiä myös muita protokollia käyttävissä järjestelmissä. Yhdyskäytävän tehtävänä on silloin tehdä tarvittavat protokollamuunnokset XMPP:n ja käyttäjän asiakasohjelman käyttämän protokollan välillä.
 
 
 Emme millään pysty tutustumaan kaikkiin mahdollisiin internetin kautta saatavilla oleviin palveluihin ja niiden käyttämiin protokolliin. Tässä jäävät esimerkiksi erilaiset TV- ja videopalvelut kokonaan käsittelemättä. Jos erilaiset palvelut kiinnostavat laajemminkin, niin kannattaa itse aktiivisesti etsiä lisätietoja. Wikipediassa on yleensä ihan hyviä tiiviitä kuvauksia eri teemoista. Kannattaa lukea myös ihan perinteisiä lehtiä ja niiden artikkeleita. Suomenkielisiä lehtiä, joissa on paljon tietoliikenteeseen ja internetin palveluihin liittyviä artikkeleja ovat esimerkiksi Mikrobitti, MPC, Tekniikan maailma ja Scrolli. Lehtiä on toki paljon muitakin, mutta näitä selailen itse säännöllisesti.
@@ -29,7 +29,7 @@ Emme millään pysty tutustumaan kaikkiin mahdollisiin internetin kautta saatavi
 ## Virtuaalinen yksityisverkko
 
 
-Virtuaalinen yksityisverkko (engl. virtual private network, VPN) tapa muodostaa suojattu yhteys esimerkiksi työpaikan verkkoon silloinkin, kun käyttäjä todellisuudessa on jossain muualla. VPN-yhteyden avulla oman koneensa saa liitettyä työpaikan verkkoon siten, että koneella ovat käytettävissä ihan samat palvelut kuin työpaikallakin. Usein tietoturvan parantamiseksi organisaatiot rajoittavat palvelujen käyttöä ja näkyvyyttä siten, että ne ovat käytettävissä vain organisaation omassa verkossa.
+Virtuaalinen yksityisverkko (engl. virtual private network, VPN) on tapa muodostaa suojattu yhteys esimerkiksi työpaikan verkkoon silloinkin, kun käyttäjä todellisuudessa on jossain muualla. VPN-yhteyden avulla oman koneensa saa liitettyä työpaikan verkkoon siten, että koneella ovat käytettävissä ihan samat palvelut kuin työpaikallakin. Usein tietoturvan parantamiseksi organisaatiot rajoittavat palvelujen käyttöä ja näkyvyyttä siten, että ne ovat käytettävissä vain organisaation omassa verkossa.
 
 Virtuaalinen yksityisverkko ei oikeastaan ole vain sovelluskerroksen asia, koska se vaikuttaa myös verkkokerroksen toimintaan. Käyttäjälle se on sovellus muiden joukossa ja siksi käsitellään jo tässä yhteydessä.
 
@@ -44,7 +44,7 @@ Lähettäjän sovellus lähettää viestin normaalisti ja protokollapinon eri ke
 
 ## Yhteenveto
 
-Tässä osiossa oli paljon asiaa, mutta se oli samalla vain pintaraapaisu.  Tutustuimme sovelluskerroksen yleisiin palveluihin, mutta jätimme tarkastelun aika yleiselle tasolle. Kaikki uudet verkkosovellukset tehdään nimenomaan sovelluskerroksen tasolla, tai jopa sen päälle. Erityisesti selaimissa toimivat palvelut siirtävät omat viestinsä HTTP-protokollan sisällä. Niillä on siis oma protokolla asiakkaan ja palvelimen väliseen viestintään ja tämän protokolla käyttää HTTP-protokollaa viestiensä siirtämiseen.
+Tässä osiossa oli paljon asiaa, mutta se oli samalla vain pintaraapaisu.  Tutustuimme sovelluskerroksen yleisiin palveluihin, mutta jätimme tarkastelun aika yleiselle tasolle. Kaikki uudet verkkosovellukset tehdään nimenomaan sovelluskerroksen tasolla, tai jopa sen päälle. Erityisesti selaimissa toimivat palvelut siirtävät omat viestinsä HTTP-protokollan sisällä. Niillä on siis oma protokolla asiakkaan ja palvelimen väliseen viestintään ja tämä protokolla käyttää HTTP-protokollaa viestiensä siirtämiseen.
 
 Tiedostojen siirtoon tai käyttäjien väliseen viestintään on tarjolla paljon erilaisia järjestelmiä. Tässä tutustuttiin niistä perinteisimpiin, koska ne ovat helpompia hahmottaa kuin uudemmat ja monipuolisemmat palvelut.
 
