@@ -57,7 +57,7 @@ Näin käy aina, kun alkuperäinen viesti meni perille, mutta kuittaus katosi. K
 
 ## UDP
 
-UDP yksinkertainen kuljetusprotokolla, joka ei välitä luotettavuudesta eikä tarjoa varmaa tiedonsiirtoa. Se ei muodosta yhteyttä ja käsittelee jokaisen sovellukselta tulevan viestin erillisenä datagrammina. Wikipediassa on [sivu UDP:stä](https://fi.wikipedia.org/wiki/UDP).
+UDP on yksinkertainen kuljetusprotokolla, joka ei välitä luotettavuudesta eikä tarjoa varmaa tiedonsiirtoa. Se ei muodosta yhteyttä ja käsittelee jokaisen sovellukselta tulevan viestin erillisenä datagrammina. Wikipediassa on [sivu UDP:stä](https://fi.wikipedia.org/wiki/UDP).
 
 UDP yksinkertaisesti vain ottaa sovellukselta viestin välitettäväksi ja laittaa sen eteenpäin verkkokerrokselle. Toki UDP:kin laittaa viestiin oman kehyksen, jossa on myös vastaanottavan sovelluksen käyttämä porttinumero, jotta vastaanotettu viesti voidaan toimittaa oikealle sovellukselle.
 
