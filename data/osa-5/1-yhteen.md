@@ -18,7 +18,7 @@ hidden: false
 
 Olemme käyneet läpi tietoliikenteen erilaisia osa-alueita, joitakin tarkemmin ja joitakin vain ohimennen.
 
-Kootaan vielä kaikki asiat yhdeksi isommaksi kokonaisuudeksi. Tässä ei siis pitäisi enää tulla varsinaisesti uutta asiaa, vaan katsotaan vaan kurssilla käsiteltyjen asioiden yhteistoimintaa.
+Kootaan vielä kaikki asiat yhdeksi isommaksi kokonaisuudeksi. Tässä ei siis pitäisi enää tulla varsinaisesti uutta asiaa, vaan katsotaan kurssilla käsiteltyjen asioiden yhteistoimintaa.
 
 ![Kaavakuva missä viesti kulkee lähettäjältä vastaanottajalle useamman reitittimen kautta](../img/lahettaja-reititin-vastaanottaja.svg)
 
@@ -90,9 +90,9 @@ Jos viesti olisi ollut menossa saman aliverkon laitteelle, esim. verkkokirjoitti
 <quiz id="a8b24c90-8656-485e-b374-df00215a71e0"></quiz>
 
 
-Näiden vaiheiden jälkeen viesti on vihdoin saatu siirrettyä yhden linkin verran eteenpäin koht vastaanottajaa. Ensimmäisen linkin jälkeen viesti on siis päätynyt kotiverkon yhdyskäytävänä toimivalle reitittimelle.
+Näiden vaiheiden jälkeen viesti on vihdoin saatu siirrettyä yhden linkin verran eteenpäin kohti vastaanottajaa. Ensimmäisen linkin jälkeen viesti on siis päätynyt kotiverkon yhdyskäytävänä toimivalle reitittimelle.
 
-Reitittimen linkkikerros poistaa viestistälinkkikerroksen kirjekuoren ja antaa verkkokerroksen kirjekuoren verkkokerrokselle tarkasteltavaksi. Reititin huomaa, että viesti ei ole sille tarkoitettu, joten se selvittää seuraavan vastaanottajan (usein joku toinen reititin) IP-osoitteen ja sen perusteella kyseisen laitteen linkkikerroksen osoitteen ja antaa viestin linkkikerrokselle välitettäväsksi tälle laitteelle.
+Reitittimen linkkikerros poistaa viestistä linkkikerroksen kirjekuoren ja antaa verkkokerroksen kirjekuoren verkkokerrokselle tarkasteltavaksi. Reititin huomaa, että viesti ei ole sille tarkoitettu, joten se selvittää seuraavan vastaanottajan (usein joku toinen reititin) IP-osoitteen ja sen perusteella kyseisen laitteen linkkikerroksen osoitteen ja antaa viestin linkkikerrokselle välitettäväksi tälle laitteelle.
 
 Näin viesti etenee vähitellen reitittimeltä toiselle, kunnes se saapuu Helsingin ylipiston reitittimelle.
 
@@ -118,7 +118,7 @@ Tietoliikenteessä on paljon toimijoita, mutta jokainen niistä hoitaa vain oman
 
 Seuraavilla kursseilla tutustutaan tarkemmin eri protokollien toimintaan, niiden viestien rakenteisiin sekä erityisesti verkon kuormitukseen ja luotettavaan toimintaan liittyviin periaatteisiin.
 
-Anna vielä lopuksia palautetta tästä kurssista. 
+Anna vielä lopuksi palautetta tästä kurssista. 
 
 </quiz><!-- Palautetta -->
 <quiz id="a18fe51a-80a8-41a7-99a5-d591ccba2f9a"></quiz>
