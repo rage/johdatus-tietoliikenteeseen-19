@@ -10,7 +10,7 @@ title: "Viestin välitys"
 
 ## Sanomanvälitys protokollapinon kerrosten välillä
 
-Käydään nyt ensimmäisen kerran tarinana läpi viestin kulkeminen lähettäjältä vastaanottajalle. Tähän tarinaan palataan kurssin aikana useaan kertaan ja lisätään mukaan paljon yksityiskohtia.
+Käydään nyt ensimmäisen kerran tarinana läpi viestin kulkeminen lähettäjältä vastaanottajalle. Tarinaan palataan kurssin aikana useaan kertaan ja siihen lisätään mukaan paljon yksityiskohtia.
 
 Viestin kuljettaminen lähettäjältä vastaanottajalle on suhteellisen yksinkertaista, jos lähettäjän tietokone ja vastaanottajan tietokone ovat samassa osassa tietoverkkoa. Tällöin lähettäjän sovellus (esim. www-selain) vain muodostaa sovellustason viestin, jota usein kutsutaan sanomaksi. Sovelluskerroksella toimiva sovellus pyytää kuljetuskerroksella toimivaa palvelua huolehtimaan tämän sanoman vastaanottajalle, joka on tarkemmin ottaen vastaanottavan koneen sovelluskerroksella toimiva sovellus, esim. www-palvelinohjelma.
 
