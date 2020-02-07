@@ -14,14 +14,14 @@ hidden: false
 </text-box>
 
 
-Aimmissa osioissa on jo ollut paljon materiaalia eri kerrosten osoitteista.
+Aiemmissa osioissa on jo ollut paljon materiaalia eri kerrosten osoitteista.
 
 <quiz id="9e9179e8-7e45-4c81-b0e0-d19cab054a7f"></quiz>
 
 
 ##  Linkkikerros
 
-Linkkikerroksen tehtävä on siirtää viesti yhden linkin sisällä lähettäjältä vastaanottajalle. Linkkikerros siis keskittyy vain viestin siirtoon fyysisen yhteyden yli yhdeltä solmulta toiselle solmulle. Linkkikerros ei siis välitä mitä viestin sisällä on tai minne sen lopulta pitää päätyä. Linkkikerros vain yksinkertaisesti siirtää viestin tämän yhden linkin yli seuraavalla laitteelle, joka usein on reititin.
+Linkkikerroksen tehtävä on siirtää viesti yhden linkin sisällä lähettäjältä vastaanottajalle. Linkkikerros siis keskittyy vain viestin siirtoon fyysisen yhteyden yli yhdeltä solmulta toiselle solmulle. Linkkikerros ei siis välitä mitä viestin sisällä on tai minne sen lopulta pitää päätyä. Linkkikerros vain yksinkertaisesti siirtää viestin tämän yhden linkin yli seuraavalle laitteelle, joka usein on reititin.
 
 Yhteys kahden laitteen välillä eli linkki voidaan toteuttaa usealla eri tavalla ja viestien siirtoon on myös useita vaihtoehtoisia protokollia. Tällä kurssilla tutustumme niistä vain ethernet-verkkoon, koska se on tyypillinen internetin linkkikerroksen toteutustapa.
 
@@ -35,7 +35,7 @@ Tällä kurssilla keskitytään kuitenkin enemmän siihen, millaisia viestejä e
 
 Ethernetissä kulkevia viestejä kutsutaan nimellä kehys (engl. frame). Kehyksen rakenne on määritelty tarkasti ja niillä on maksimipituus. IP-osoite oli verkkokerroksen vastaanottajan tunniste ja se kertoo lopullisen IP-paketin vastaanottavan koneen. Ethernet-verkossa viesti lähetetään aina saman verkon jollekin laitteelle, joten tässä verkossa käytetään MAC-osoitteita.
 
-Kun verkkokerros pyytää linkkikerrosta välittämään IP-paketin, niin sen pitää kertoa mille paikallisen verkon koneelle tämä IP-paketti pitää toimittaa. Verkkokerroksella tiedetään oletusyhdyskäytävän tai reititystaulusta katsotun seuraavan reitittimen IP-osoite. Linkkikerros kuitenkin välittää kehyksiä MAC-osoitteiden perusteella. Näin ollen pyynnön yhteydessä täytyy selvittää vastaanottavan laitteen MAC-osoite. Tämä voidaan tehdä, joko suoraan omasta välimuistista, jos kyseisen koneen kanssa on viestitelty hiljattain tai MAC-osoite voidaan kysyä ARP-protokollalla. ARP (Address resolution protocol) on monilähetysprotokolla, jolla lähettäjä kysyy kaikilta verkon laitteilta, mikä niistä käyttää kyseistä IP-numeroa. Kaikki saavat viestin, mutta vain laite, jolla tuo IP-numero on vastaa ja kertoo oman MAC-osoitteensa. Tämä osoite voidaan tilapäisesti tallettaa omaan välimuistiin niin sanottuun ARP-tauluun.  ARP-taulussa on siis tallennettuna IP-osoite ja MAC-osoite pareja, joille on vielä asetettu tietty voimassaoloaika.
+Kun verkkokerros pyytää linkkikerrosta välittämään IP-paketin, niin sen pitää kertoa mille paikallisen verkon koneelle tämä IP-paketti pitää toimittaa. Verkkokerroksella tiedetään oletusyhdyskäytävän tai reititystaulusta katsotun seuraavan reitittimen IP-osoite. Linkkikerros kuitenkin välittää kehyksiä MAC-osoitteiden perusteella. Näin ollen pyynnön yhteydessä täytyy selvittää vastaanottavan laitteen MAC-osoite. Tämä voidaan tehdä, joko suoraan omasta välimuistista, jos kyseisen koneen kanssa on viestitelty hiljattain, tai MAC-osoite voidaan kysyä ARP-protokollalla. ARP (Address resolution protocol) on monilähetysprotokolla, jolla lähettäjä kysyy kaikilta verkon laitteilta, mikä niistä käyttää kyseistä IP-numeroa. Kaikki saavat viestin, mutta vain laite, jolla tuo IP-numero on, vastaa ja kertoo oman MAC-osoitteensa. Tämä osoite voidaan tilapäisesti tallettaa omaan välimuistiin niin sanottuun ARP-tauluun.  ARP-taulussa on siis tallennettuna IP-osoite ja MAC-osoite pareja, joille on vielä asetettu tietty voimassaoloaika.
 
 Ethernet lisää kehyksen alkuun (ja loppuun) omat otsake (ja lopuke) -tietonsa. Kehyksen varsinainen data sisältää välitettävän IP-paketin. Kehyksen otsakkeessa on lähettäjän ja vastaanottajan MAC-osoitteiden lisäksi myös joitakin muita kenttiä, mutta sivuutetaan ne tällä kurssilla.
 
